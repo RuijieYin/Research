@@ -17,10 +17,10 @@ extract_rules <- function (data, n.trees, mtry, initial_seed, node_depth_max) {
   # node_depth_max: sets the value of nodedepth in rfsrc()
   
   
-  # initial a data frame to store c("rules", "class label", "performance score")
+  # initialize a data frame to store c("rules", "class label", "performance score")
   final_result <- data.frame()
   
-  # initial a list to store trees
+  # initialize a list to store trees
   tree.collection <- vector("list", n.trees)
   
   # grow n.tree of trees
