@@ -1,7 +1,7 @@
-source("F:/Dropbox/UM Biostatistics/Research/1st Project/TNBCtype_research/Programs/treeRule.Obtain.Judge.R")
+source(".loc/treeRule.Obtain.Judge.R")
 
-train_data <- read.csv("F:/Dropbox/UM Biostatistics/Research/1st Project/TNBCtype_research/Programs/train_data_example.csv", row.names = 1)
-test_data <- read.csv("F:/Dropbox/UM Biostatistics/Research/1st Project/TNBCtype_research/Programs/test_data_example.csv", row.names = 1)
+train_data <- read.csv(".loc/train_data_example.csv", row.names = 1)
+test_data <- read.csv(".loc/test_data_example.csv", row.names = 1)
 
 # extract.rule.and.prediction.func(data_input = train_data, n.trees = 1000, mtry = 35, initial_seed = 1, node_depth_max = 3, test_input = test_data)
 
