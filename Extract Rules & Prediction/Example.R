@@ -1,18 +1,18 @@
 # example
 # load treeRule.Obtain.Judge.R
-source("F:/Dropbox/UM Biostatistics/Research/1st Project/TNBCtype_research/Programs/treeRule.Obtain.Judge.R")
+source(".loc/treeRule.Obtain.Judge.R")
 # load extract.rule.func.R
-source("F:/Dropbox/UM Biostatistics/Research/1st Project/TNBCtype_research/Programs/extract.rule.func.R")
+source(".loc/extract.rule.func.R")
 # load pred.function.R
-source("F:/Dropbox/UM Biostatistics/Research/1st Project/TNBCtype_research/Programs/pred.func.R")
+source(".loc/pred.func.R")
 # load eval.kappa.R
-source("F:/Dropbox/UM Biostatistics/Research/1st Project/TNBCtype_research/Programs/eval.kappa.R")
+source(".loc/eval.kappa.R")
 
 
 
 # load training and test data:
-train_data <- read.csv("F:/Dropbox/UM Biostatistics/Research/1st Project/TNBCtype_research/Programs/train_data_example.csv", row.names = 1)
-test_data <- read.csv("F:/Dropbox/UM Biostatistics/Research/1st Project/TNBCtype_research/Programs/test_data_example.csv", row.names = 1)
+train_data <- read.csv(".loc/train_data_example.csv", row.names = 1)
+test_data <- read.csv(".loc/test_data_example.csv", row.names = 1)
 
 # use extract.rule.func to extract rules: set n.trees as small number for faster processing;
 # returns a list of top 20 retrieved rules for each of the subtypes
