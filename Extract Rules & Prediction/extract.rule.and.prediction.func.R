@@ -3,10 +3,10 @@
 library(randomForestSRC)
 library(caret)
 
-source("F:/Dropbox/UM Biostatistics/Research/1st Project/TNBCtype_research/Programs/Extract Rules & Prediction/treeRule.Obtain.Judge.R")
+source(".loc/treeRule.Obtain.Judge.R")
 
-train_data <- read.csv("F:/Dropbox/UM Biostatistics/Research/1st Project/TNBCtype_research/Programs/Extract Rules & Prediction/train_data_example.csv", row.names = 1)
-test_data <- read.csv("F:/Dropbox/UM Biostatistics/Research/1st Project/TNBCtype_research/Programs/Extract Rules & Prediction/test_data_example.csv", row.names = 1)
+train_data <- read.csv(".loc/train_data_example.csv", row.names = 1)
+test_data <- read.csv(".loc/test_data_example.csv", row.names = 1)
 
 
 #####################
