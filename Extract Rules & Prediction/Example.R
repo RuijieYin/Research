@@ -1,7 +1,7 @@
 # load treeRule.Obtain.Judge.R
 source(".dir/treeRule.Obtain.Judge.R")
 # load split.extract.predict.R
-source(".dir/split.extract.predict.2.R")
+source(".dir/split.extract.predict.R")
 
 
 
