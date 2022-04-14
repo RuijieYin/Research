@@ -1,12 +1,12 @@
 # load treeRule.Obtain.Judge.R
-source("/Users/ruijieyin/Dropbox/UM Biostatistics/Research/1st Project/TNBCtype_research/Programs/treeRule.Obtain.Judge.R")
+source(".dir/treeRule.Obtain.Judge.R")
 # load split.extract.predict.R
-source("/Users/ruijieyin/Dropbox/UM Biostatistics/Research/1st Project/TNBCtype_research/Programs/split.extract.predict.2.R")
+source(".dir/split.extract.predict.2.R")
 
 
 
 # split the training data (TCGA BRCA 1095 samples: 800 training, 200 validation, 95 test)
-data.split <- split.train(data = read.csv(file = "/Users/ruijieyin/Dropbox/UM Biostatistics/Research/1st Project/TNBCtype_research/BRCA PAM50/tcga_quantiles_50.csv", header = T, row.names = 1))
+data.split <- split.train(data = read.csv(file = ".dir/tcga_quantiles_50.csv", header = T, row.names = 1))
 # # view training data
 data.split$train.data
 # # view validation data
