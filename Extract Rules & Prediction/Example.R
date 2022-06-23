@@ -1,7 +1,7 @@
 # load treeRule.Obtain.Judge.R
-source(".dir/treeRule.Obtain.Judge.R")
+source(".dir/treeRule_Obtain_Judge.R")
 # load split.extract.predict.R
-source(".dir/split.extract.predict.R")
+source(".dir/split_extract_predict_binary.R")
 
 
 
@@ -15,7 +15,7 @@ data.split$validation.data
 data.split$test.data
 
 # extract rules:
-rules <- extract.rules(data = data.split$train.data, n.trees = 50, mtry = 50, node_depth_max = 3)
+rules <- extract.rules(data = data.split$train.data, n.trees = 50, mtry = 30, node_depth_max = 5)
 # see all rules extracted from the n.tree trees
 rules$Rules
 
