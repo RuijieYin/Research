@@ -1,0 +1,40 @@
+$n.trees
+[1] 1000
+
+$mtry
+[1] 40
+
+$node_depth_max
+[1] 7
+
+$positive
+[1] "BRCA.LumA"
+
+$table
+           Reference
+Prediction  BRCA.LumA BRCA.LumB
+  BRCA.LumA        55         9
+  BRCA.LumB         2        13
+
+$overall
+      Accuracy          Kappa  AccuracyLower  AccuracyUpper   AccuracyNull 
+   0.860759494    0.615996465    0.764503448    0.928389528    0.721518987 
+AccuracyPValue  McnemarPValue 
+   0.002649496    0.070440429 
+
+$byClass
+         Sensitivity          Specificity       Pos Pred Value 
+           0.9649123            0.5909091            0.8593750 
+      Neg Pred Value            Precision               Recall 
+           0.8666667            0.8593750            0.9649123 
+                  F1           Prevalence       Detection Rate 
+           0.9090909            0.7215190            0.6962025 
+Detection Prevalence    Balanced Accuracy 
+           0.8101266            0.7779107 
+
+$mode
+[1] "sens_spec"
+
+$dots
+list()
+
