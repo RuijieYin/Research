@@ -1,0 +1,44 @@
+$n.trees
+[1] 200
+
+$mtry
+[1] 30
+
+$node_depth_max
+[1] 4
+
+$positive
+NULL
+
+$table
+             Reference
+Prediction    BRCA.Basal BRCA.Her2 BRCA.LumA BRCA.LumB BRCA.Normal
+  BRCA.Basal          13         5         0         0           7
+  BRCA.Her2            0         0         0         0           0
+  BRCA.LumA            0         0        27         1           7
+  BRCA.LumB            0         1        12        15           0
+  BRCA.Normal          0         0         1         0           6
+
+$overall
+      Accuracy          Kappa  AccuracyLower  AccuracyUpper   AccuracyNull AccuracyPValue  McnemarPValue 
+  6.421053e-01   5.187723e-01   5.372025e-01   7.378857e-01   4.210526e-01   1.164176e-05            NaN 
+
+$byClass
+                   Sensitivity Specificity Pos Pred Value Neg Pred Value Precision Recall        F1
+Class: BRCA.Basal       1.0000   0.8536585      0.5200000      1.0000000 0.5200000 1.0000 0.6842105
+Class: BRCA.Her2        0.0000   1.0000000            NaN      0.9368421        NA 0.0000        NA
+Class: BRCA.LumA        0.6750   0.8545455      0.7714286      0.7833333 0.7714286 0.6750 0.7200000
+Class: BRCA.LumB        0.9375   0.8354430      0.5357143      0.9850746 0.5357143 0.9375 0.6818182
+Class: BRCA.Normal      0.3000   0.9866667      0.8571429      0.8409091 0.8571429 0.3000 0.4444444
+                   Prevalence Detection Rate Detection Prevalence Balanced Accuracy
+Class: BRCA.Basal  0.13684211     0.13684211           0.26315789         0.9268293
+Class: BRCA.Her2   0.06315789     0.00000000           0.00000000         0.5000000
+Class: BRCA.LumA   0.42105263     0.28421053           0.36842105         0.7647727
+Class: BRCA.LumB   0.16842105     0.15789474           0.29473684         0.8864715
+Class: BRCA.Normal 0.21052632     0.06315789           0.07368421         0.6433333
+
+$mode
+[1] "sens_spec"
+
+$dots
+list()
