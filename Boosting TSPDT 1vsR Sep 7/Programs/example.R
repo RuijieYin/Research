@@ -1,7 +1,7 @@
 load(boosting.TSPDT.multiclass.R)
 
 # load the data, split training and test data
-data.model = trans.tcga.brca.data(data = read.csv("/Users/ruijieyin/Dropbox/UM Biostatistics/Research/1st Project/TNBCtype_research/BRCA PAM50/tcga_quantiles_50.csv", header = T, row.names = 1))
+data.model = trans.tcga.brca.data(data = read.csv("tcga_quantiles_50.csv", header = T, row.names = 1))
 # training data
 data.model$training.data
 # test data
