@@ -33,23 +33,23 @@ colnames(results_data_khan) = c("Khan", "step1", "step2")
 
 results_data_armstrong = read.csv("F:/Dropbox/UM Biostatistics/Research/1st Project/TNBCtype_research/Programs/Benchmarking/exp22_reviewer/experiment3/Results/armstrong_results_boosting.csv")
 results_data_armstrong[,1]=c(rep("Leukemia",nrow(results_data_armstrong)))
-colnames(results_data_armstrong) = c("Khan", "step1", "step2")
+colnames(results_data_armstrong) = c("Armstrong", "step1", "step2")
 
 results_data_bhattacharjee = read.csv("F:/Dropbox/UM Biostatistics/Research/1st Project/TNBCtype_research/Programs/Benchmarking/exp22_reviewer/experiment3/Results/bhattacharjee_results_boosting.csv")
 results_data_bhattacharjee[,1]=c(rep("Lung",nrow(results_data_bhattacharjee)))
-colnames(results_data_bhattacharjee) = c("Khan", "step1", "step2")
+colnames(results_data_bhattacharjee) = c("Bhattacharjee", "step1", "step2")
 
 results_data_dyrskjot = read.csv("F:/Dropbox/UM Biostatistics/Research/1st Project/TNBCtype_research/Programs/Benchmarking/exp22_reviewer/experiment3/Results/dyrskjot_results_boosting.csv")
 results_data_dyrskjot[,1]=c(rep("Bladder",nrow(results_data_dyrskjot)))
-colnames(results_data_dyrskjot) = c("Khan", "step1", "step2")
+colnames(results_data_dyrskjot) = c("Dyrskjot", "step1", "step2")
 
 results_data_yeoh = read.csv("F:/Dropbox/UM Biostatistics/Research/1st Project/TNBCtype_research/Programs/Benchmarking/exp22_reviewer/experiment3/Results/yeoh_results_boosting.csv")
 results_data_yeoh[,1]=c(rep("ALL",nrow(results_data_yeoh)))
-colnames(results_data_yeoh) = c("Khan", "step1", "step2")
+colnames(results_data_yeoh) = c("Yeoh", "step1", "step2")
 
 results_data_tcga = read.csv("F:/Dropbox/UM Biostatistics/Research/1st Project/TNBCtype_research/Programs/Benchmarking/exp22_reviewer/experiment3/Results/tcga_results_boosting.csv")
 results_data_tcga[,1]=c(rep("TNBC",nrow(results_data_tcga)))
-colnames(results_data_tcga) = c("Khan", "step1", "step2")
+colnames(results_data_tcga) = c("TCGA", "step1", "step2")
 
 
 
@@ -77,7 +77,7 @@ results_final$dataset <- factor(results_final$dataset, levels = c("Liver", "CNS"
 melted_df <- reshape2::melt(results_final, id.vars = "dataset")
 
 
-#
+
 boosting_plot <- ggplot(melted_df, aes(x = dataset, y = value, fill = variable)) +
   geom_boxplot() +
   geom_vline(xintercept = c(1.5, 2.5, 3.5, 4.5, 5.5, 6.5,7.5,8.5,9.5), linetype = "longdash") +
